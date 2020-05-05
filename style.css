@@ -2,14 +2,14 @@
     background-color: #FFCDBA;
     margin: auto;
     border: none;
-    padding: 0.5em 0em;
+    padding: 0.5rem 0rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9em;
-    margin: 0.2em 0.1em;
+    font-size: 0.9rem;
+    margin: 0.2rem 0.1rem;
     cursor: pointer;
-    width: 7em;
+    width: 7rem;
     font-style: italic;
     font-weight: bold;
     color: #D50B01;
@@ -19,33 +19,33 @@
     background-color: #D50B01;
     margin: auto;
     border: none;
-    padding: 0.5em 0em;
+    padding: 0.5rem 0rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9em;
-    margin: 0.2em 0.1em;
+    font-size: 0.9rem;
+    margin: 0.2rem 0.1rem;
     cursor: pointer;
-    width: 7em;
+    width: 7rem;
     font-style: italic;
     font-weight: bolder;
     color: #FFCDBA;
 }
 
 #superBody{
-    width: 22.5em;
+    width: 22.5rem;
     background-color: #D50B01;
     margin: auto;
 }
 
 #boddy{
-    width: 22.5em;
+    width: 22.5rem;
 }
 #items{
     background-color: #FFCDBA;
-    padding-top: 5em;
-    padding-bottom: 3.5em;
-    width: 22.5em;
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    width: 22.5rem;
 }
 
 #menu {
@@ -53,8 +53,8 @@
     left: 0;
     position: fixed;
     margin: auto;
-    width: 22.5em;
-    height: 5em;
+    width: 22.5rem;
+    height: 5rem;
     background-image: url(./fons.png);
     background-size: 100% auto;
 }
@@ -65,74 +65,75 @@
     bottom: 0;
     position: fixed;
     margin: auto;
-    width: 22.5em;
-    height: 3em;
+    width: 22.5rem;
+    height: 3rem;
     background-image: url(./fons.png);
     background-size: 100% auto;
 }
 
 #info {
-    right: 0.1em;
-    left: 0.1em;
-    bottom: 3.2em;
+    right: 0.1rem;
+    left: 0.1rem;
+    bottom: 3.2rem;
     position: fixed;
     margin: auto;
-    width: 25em;
-    height: 3.6em;
-    font-size: 0.8em;
+    width: 25rem;
+    height: 3.6rem;
+    font-size: 0.8rem;
     background-color: #FFCDBA;
 }
 
 #menu2 {
-    width: 20em;
+    width: 22.5rem;
     margin: auto;
-    margin-top: 0.2em;
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
 }
 
 #imagen{
-    width:4em;
+    width:4rem;
     float: left;
 }
 
 #nombre{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: -0.2em;
+    margin-top: -0.2rem;
 }
 
 #descripcion{
-    font-size: 0.75em;
-    padding-top: -0.2em;
-    margin-top: -0.15em;
+    font-size: 0.75rem;
+    padding-top: -0.2rem;
+    margin-top: -0.15rem;
     font-style: italic;
 }
 
 #extern {
-    width: 22.5em;
-    height: 3.25em;
+    width: 22.5rem;
+    height: 3.25rem;
     display: inline-block;
     color: #a20800;
 }
 
 #internImatge {
-    margin: 0.2em 0.2em 0.2em 0.2em;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     height: 100%;
     float: left;
 }
 
 #internNom {
-    margin: 0.2em 0.1em 0.1em 0.1em;
-    width: 14em;
+    margin: 0.2rem 0.1rem 0.1rem 0.1rem;
+    width: 14rem;
     float: left;
 }
 
 #internPreu {
     text-align: right;
-    margin: 0.2em 0.2em 0.2em 0.2em;
-    width: 3.5em;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+    width: 3.5rem;
     height: 100%;
     float: right;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     
 }
@@ -140,24 +141,24 @@
 #mini {
     font-style: italic;
     font-weight: normal;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     color: #a20800;
 }
 
 #sub {
-    margin-top: -0.4em;
-    margin-left: 0.2em;
+    margin-top: -0.4rem;
+    margin-left: 0.2rem;
     font-style: italic;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #a20800;
 }
 
 #tittle{
-    font-size: 1em;
+    font-size: 1rem;
     font-style: italic;
     font-weight: bold;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    margin-left: 0.3em;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
 }

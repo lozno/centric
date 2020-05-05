@@ -21,17 +21,17 @@
             </div>
             <div id ="items"  ref="toolbarChat">
                 <div v-show="selectMenu == 'bocadillos'"> 
-                    <div id="tittle"> ENTREPANS FRETS </div>
+                    <div id="tittle"> {{tittleFrios[language]}} </div>
                     <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosFrios" :current="boc"></item>
-                    <div id="tittle"> ENTREPANS CALENTS </div>
+                    <div id="tittle"> {{tittleCalientes[language]}} </div>
                     <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosCalientes" :current="boc"></item>
                 </div>
                 
                 <div v-show="selectMenu == 'raciones'"> 
-                    <div id="tittle"> EMBOTITS IBÈRICS DE GLA </div>
+                    <div id="tittle"> {{tittleIbericas[language]}} </div>
                     <div id="sub"> {{descEmbIberics[language]}} </div>
                     <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesIbericas" :current="boc"></item>
-                    <div id="tittle"> RACIONS VARIADES </div>
+                    <div id="tittle"> {{tittleNormales[language]}} </div>
                     <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesNormales" :current="boc"></item>
                 </div>
             </div>

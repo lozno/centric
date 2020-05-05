@@ -2,6 +2,10 @@ var vm = new Vue({
   el: '#boddy',
   data: {
       language: 0,
+      tittleFrios: ["ENTREPANS FREDS", "BOCADILLOS FRÍOS", "COLD SANDWICHES", "SANDWICHS FROIDS"],
+      tittleCalientes: ["ENTREPANS CALENTS", "BOCADILLOS CALIENTES", "HOT SANDWICHES", "SANDWICHS CHAUDS"],
+      tittleIbericas: ["EMBOTITS IBÈRICS DE GLA", "EMBUTIDOS IBÉRICOS DE BELLOTA", "ACORN-FED IBERIAN COLD SAUSAGES", "CHARCUTERIE IBÉRIQUE DE GLAND"],
+      tittleNormales: ["RACIONS VARIADES", "RACIONES VARIADAS", "ASSORTED PORTIONS", "PORTIONS ASSORTIES"],
       mini:["mini", "mini", "mini", "mini"],
       mitja:["mitja","media","half","demi"],
       descEmbIberics: ["Racions amb torrades incloses", "Raciones con torradas incluídas", "Rations included toast", "Rations inclus toasts"],

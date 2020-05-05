@@ -19,23 +19,30 @@
                     <button v-bind:class="aperitivos" v-on:click="select('aperitivos')">Aperitivos</button>
                 </div>
             </div>
-            <div id ="items" v-show="selectMenu == 'bocadillos'">
-                <div id="tittle"> ENTREPANS FRETS </div>
-                <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosFrios" :current="boc"></item>
-                <div id="tittle"> ENTREPANS CALENTS </div>
-                <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosCalientes" :current="boc"></item>
-            </div>
-
-            <div id ="items" v-show="selectMenu == 'raciones'">
-                <div id="tittle"> EMBOTITS IBÈRICS DE GLA </div>
-                <div id="sub"> {{descEmbIberics[language]}} </div>
-                <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesIbericas" :current="boc"></item>
-                <div id="tittle"> RACIONS VARIADES </div>
-                <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesNormales" :current="boc"></item>
+            <div id ="items"  ref="toolbarChat">
+                <div v-show="selectMenu == 'bocadillos'"> 
+                    <div id="tittle"> ENTREPANS FRETS </div>
+                    <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosFrios" :current="boc"></item>
+                    <div id="tittle"> ENTREPANS CALENTS </div>
+                    <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosCalientes" :current="boc"></item>
+                </div>
+                
+                <div v-show="selectMenu == 'raciones'"> 
+                    <div id="tittle"> EMBOTITS IBÈRICS DE GLA </div>
+                    <div id="sub"> {{descEmbIberics[language]}} </div>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesIbericas" :current="boc"></item>
+                    <div id="tittle"> RACIONS VARIADES </div>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesNormales" :current="boc"></item>
+                </div>
             </div>
             
             <div id = "base">
-                
+                <div id ="languages">
+                    <img class ="langImage" src="./ca.png" alt="ca" v-on:click="changeLanguage(0)"/>
+                    <img class ="langImage" src="./es.png" alt="es" v-on:click="changeLanguage(1)"/>
+                    <img class ="langImage" src="./en.webp" alt="en" v-on:click="changeLanguage(2)"/>
+                    <img class ="langImage" src="./fr.webp" alt="fr" v-on:click="changeLanguage(3)"/>
+                </div>
             </div>
         </div>
     </body>

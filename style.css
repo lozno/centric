@@ -163,3 +163,13 @@
     margin-bottom: 0.3rem;
     margin-left: 0.3rem;
 }
+
+.langImage{
+    width: 2rem;
+    height: 1.5rem;
+}
+
+#languages{
+    margin-left: 13rem;
+    margin-top: 0.75rem;
+}

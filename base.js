@@ -23,9 +23,13 @@ var vm = new Vue({
         this[this.selectMenu] = "noSelected";
         this[name] = "selected";
         this.selectMenu = name;
+        window.scrollTo(0, 0);
+    },
+    changeLanguage: function (langIndex){
+        this.language = langIndex;
     }
   },
-  mounted() {
+  mounted() { 
     this.bocadillosFrios.push({imatge:"./BocJamon.png", nom: ["Pernil", "Jamón", "Ham", "Jambon"], desripcio: ["","","",""], preu: ["4.50", "2.75"]});
     this.bocadillosFrios.push({imatge:"./BocQueso.png", nom: ["Formatge", "Queso", "Chheese", "Formage"], desripcio: ["","","",""], preu: ["4.25", "2.75"]});
     this.bocadillosFrios.push({imatge:"./BocJamonDulce.png", nom: ["Pernil dolç", "Jamón dulce", "Cooked ham", "Jambon cuit"], desripcio: ["","","",""], preu: ["4.25", "2.75"]});
@@ -57,7 +61,7 @@ var vm = new Vue({
     this.racionesIbericas.push({imatge:"./RacionChorizo.png", nom: ["Xoriço", "Chorizo", "Chorizo", "Chorizo"], desripcio: ["","","",""], preu: ["14.00", "0"]});
     this.racionesIbericas.push({imatge:"./RacionQueso.png", nom: ["Formatge curat", "Queso curado", "Cured cheese", "Fromage affiné"], desripcio: ["Tallat a mà<br>Cabra o ovella segons disponibilitat","Cortado a mano<br>Cabra o oveja según disponibilidad","Hand cut<br>Goat or sheep according to availability","Coupe à la main<br>Chèvre ou mouton selon disponibilité"], preu: ["14.00", "0"]});
 
-    this.racionesNormales.push({imatge:"./RacionBravas.png", nom: ["Patates braves", "Patatas bravas", '"Bravas" fried potatoes in spicy sauce', '"Bravas" pommes te terre naturelles à la sauce piquante'], desripcio: ["Patates naturals<br>Salsa a part","Patatas naturales<br>Salsa a parte","Natural potatoes<br>Sauce separately","Sauce séparément"], preu: ["5.50", "0"]});
+    this.racionesNormales.push({imatge:"./RacionBravas.png", nom: ["Patates braves", "Patatas bravas", '"Bravas" fried potatoes in spicy sauce', '"Bravas" pommes te terre naturelles à la sauce piquante'], desripcio: ["Patates naturals<br>Salsa a part","Patatas naturales<br>Salsa a parte","Natural potatoes &nbsp; Sauce separately","Sauce séparément"], preu: ["5.50", "0"]});
     this.racionesNormales.push({imatge:"./RacionPatatas.png", nom: ["Patates fregides casolanes", "Patatas fritas caseras", "Home made chips", "Pommes te terre frites maison"], desripcio: ["Patates naturals","Patatas naturales","Natural potatoes","Pommes de terre naturelles"], preu: ["5.50", "0"]});
     this.racionesNormales.push({imatge:"./RacionSepiaSalsa.png", nom: ["Sípia amb salsa", "Sepia con salsa", "Cuttlefish with sauce", "Seiche en sauce"], desripcio: ["","","",""], preu: ["6.75", "0"]});
     this.racionesNormales.push({imatge:"./RacionCallos.png", nom: ["Tripa", "Callos", "Belly", "Tripes"], desripcio: ["","","",""], preu: ["6.50", "0"]});
@@ -71,6 +75,7 @@ var vm = new Vue({
     this.racionesNormales.push({imatge:"./RacionLangostinos.png", nom: ["Llagostins cuits", "Langostinos cocidos", "Cooked prawns", "Crevettes cuites"], desripcio: ["","","",""], preu: ["7.85", "0"]});
     this.racionesNormales.push({imatge:"./RacionCanaillas.png", nom: ["Cargols de punxes frescos", "Cañaillas frescas", "Fresh purple dry murices", "Rochers épineux frais"], desripcio: ["","","",""], preu: ["12.00", "0"]});
     this.racionesNormales.push({imatge:"./RacionGambas.png", nom: ["Gambes a la planxa", "Gambas a la plancha", "Grilled shrimp", "Crevettes grillées"], desripcio: ["10 unitats","10 unidades","10 units","10 unités"], preu: ["12.00", "0"]});
+    window.scrollTo(0, 0);
   }
 });
 

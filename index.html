@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Bar Cèntric Palafrugell</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body id = "superBody">
+        <div id="boddy">
+            <div id = "menu">
+                <div id="menu2">
+                    <button v-bind:class="bocadillos" v-on:click="select('bocadillos')">Bocadillos</button>
+                    <button v-bind:class="raciones" v-on:click="select('raciones')">Raciones</button>
+                    <button v-bind:class="platos" v-on:click="select('platos')">Platos</button>
+                    <button v-bind:class="postres" v-on:click="select('postres')">Postres</button>
+                    <button v-bind:class="vinos" v-on:click="select('vinos')">Vinos</button>
+                    <button v-bind:class="aperitivos" v-on:click="select('aperitivos')">Aperitivos</button>
+                </div>
+            </div>
+            <div id ="items" v-show="selectMenu == 'bocadillos'">
+                <div id="tittle"> ENTREPANS FRETS </div>
+                <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosFrios" :current="boc"></item>
+                <div id="tittle"> ENTREPANS CALENTS </div>
+                <item :lang="language" :mini="mini" v-for="(boc, index) in bocadillosCalientes" :current="boc"></item>
+            </div>
+
+            <div id ="items" v-show="selectMenu == 'raciones'">
+                <div id="tittle"> EMBOTITS IBÈRICS DE GLA </div>
+                <div id="sub"> {{descEmbIberics[language]}} </div>
+                <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesIbericas" :current="boc"></item>
+                <div id="tittle"> RACIONS VARIADES </div>
+                <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesNormales" :current="boc"></item>
+            </div>
+            
+            <div id = "base">
+                
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./component_item.js"></script>
+    <script src="./base.js"></script>
+</html>

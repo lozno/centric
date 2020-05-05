@@ -1,0 +1,163 @@
+.noSelected{
+    background-color: #FFCDBA;
+    margin: auto;
+    border: none;
+    padding: 0.5em 0em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0.2em 0.1em;
+    cursor: pointer;
+    width: 7em;
+    font-style: italic;
+    font-weight: bold;
+    color: #D50B01;
+}
+
+.selected{
+    background-color: #D50B01;
+    margin: auto;
+    border: none;
+    padding: 0.5em 0em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0.2em 0.1em;
+    cursor: pointer;
+    width: 7em;
+    font-style: italic;
+    font-weight: bolder;
+    color: #FFCDBA;
+}
+
+#superBody{
+    width: 22.5em;
+    background-color: #D50B01;
+    margin: auto;
+}
+
+#boddy{
+    width: 22.5em;
+}
+#items{
+    background-color: #FFCDBA;
+    padding-top: 5em;
+    padding-bottom: 3.5em;
+    width: 22.5em;
+}
+
+#menu {
+    right: 0;
+    left: 0;
+    position: fixed;
+    margin: auto;
+    width: 22.5em;
+    height: 5em;
+    background-image: url(./fons.png);
+    background-size: 100% auto;
+}
+
+#base {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    width: 22.5em;
+    height: 3em;
+    background-image: url(./fons.png);
+    background-size: 100% auto;
+}
+
+#info {
+    right: 0.1em;
+    left: 0.1em;
+    bottom: 3.2em;
+    position: fixed;
+    margin: auto;
+    width: 25em;
+    height: 3.6em;
+    font-size: 0.8em;
+    background-color: #FFCDBA;
+}
+
+#menu2 {
+    width: 20em;
+    margin: auto;
+    margin-top: 0.2em;
+}
+
+#imagen{
+    width:4em;
+    float: left;
+}
+
+#nombre{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -0.2em;
+}
+
+#descripcion{
+    font-size: 0.75em;
+    padding-top: -0.2em;
+    margin-top: -0.15em;
+    font-style: italic;
+}
+
+#extern {
+    width: 22.5em;
+    height: 3.25em;
+    display: inline-block;
+    color: #a20800;
+}
+
+#internImatge {
+    margin: 0.2em 0.2em 0.2em 0.2em;
+    height: 100%;
+    float: left;
+}
+
+#internNom {
+    margin: 0.2em 0.1em 0.1em 0.1em;
+    width: 14em;
+    float: left;
+}
+
+#internPreu {
+    text-align: right;
+    margin: 0.2em 0.2em 0.2em 0.2em;
+    width: 3.5em;
+    height: 100%;
+    float: right;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+#mini {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.75em;
+    color: #a20800;
+}
+
+#sub {
+    margin-top: -0.4em;
+    margin-left: 0.2em;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #a20800;
+}
+
+#tittle{
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 0.3em;
+}

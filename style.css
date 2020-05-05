@@ -6,7 +6,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0.2rem 0.1rem;
     cursor: pointer;
     width: 7rem;
@@ -23,7 +23,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0.2rem 0.1rem;
     cursor: pointer;
     width: 7rem;
@@ -40,6 +40,7 @@
 
 #boddy{
     width: 22.5rem;
+    font-family: "Segoe UI";
 }
 #items{
     background-color: #FFCDBA;
@@ -79,7 +80,7 @@
     margin: auto;
     width: 25rem;
     height: 3.6rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     background-color: #FFCDBA;
 }
 
@@ -87,7 +88,7 @@
     width: 22.5rem;
     margin: auto;
     margin-left: 0.2rem;
-    margin-top: 0.05rem;
+    margin-top: 0.2rem;
 }
 
 #imagen{
@@ -96,13 +97,13 @@
 }
 
 #nombre{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     margin-top: -0.2rem;
 }
 
 #descripcion{
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     padding-top: -0.2rem;
     margin-top: -0.15rem;
     font-style: italic;
@@ -133,7 +134,7 @@
     width: 3.5rem;
     height: 100%;
     float: right;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: bold;
     
 }
@@ -141,7 +142,7 @@
 #mini {
     font-style: italic;
     font-weight: normal;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color: #a20800;
 }
 
@@ -150,12 +151,12 @@
     margin-left: 0.2rem;
     font-style: italic;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #a20800;
 }
 
 #tittle{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic;
     font-weight: bold;
     margin-top: 0.3rem;

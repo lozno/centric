@@ -11,6 +11,7 @@ var vm = new Vue({
       tittlePlatosCombinados: ["PLATS COMBINATS", "PLATOS COMBINADOS", "COMBINED DISHES", "PLATS COMBINÉS"],
       tittlePlatosInfantiles: ["PLATS INFANTILS", "PLATOS INFANTILES", "CHILDREN'S DISHES", "PLATS POUR ENFANTS"],
       tittleVinoTinto: ["VINS NEGRES", "VINOS TINTOS", "RED WINES", "VINS ROUGES"],
+      tittleVinoBlanco: ["VINS BLANCS", "VINOS BLANCOS", "WHITE WINES", "VINS BLANCS"],
       mini:["mini", "mini", "mini", "mini"],
       mitja:["mitja","media","half","demi"],
       descEmbIberics: ["Racions amb torrades incloses", "Raciones con torradas incluídas", "Rations included toast", "Rations inclus toasts"],
@@ -34,6 +35,7 @@ var vm = new Vue({
       platosCombinados: [],
       platosInfantiles: [],
       vinosTintos: [],
+      vinosBlancos: [],
       explicacionBocatas: ["*Ingredients extra (Formatge, ceba, beicon) <b>+0.50</b> si no es diu el contrari","*Ingredientes extra (Queso, cebolla, beicon) <b>+0.50</b> si no se dice lo contrario","Extra ingredients (Cheese, onion, bacon) <b> +0.50 </b> unless otherwise stated","Ingrédients supplémentaires (fromage, oignon, bacon) <b> +0,50 </b> sauf indication contraire"]
   },
   
@@ -312,6 +314,77 @@ var vm = new Vue({
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
         preu: ["20,50", "0"]}
     );
+    this.vinosTintos.push({
+        imatge:"./pesquera.png", 
+        marca: "Pesquera",
+        denominacio: "D.O. Ribera del Duero",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["21,00", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./ramon.png", 
+        marca: "Ramon Bilbao",
+        denominacio: "D.O. Rioja",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["13,75", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./pomal.png", 
+        marca: "Viña Pomal",
+        denominacio: "D.O. Rioja",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["12,75", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./marques.png", 
+        marca: "Marqués de Cáceres",
+        denominacio: "D.O. Rioja",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["12,85", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./muga.png", 
+        marca: "Muga",
+        denominacio: "D.O. Rioja",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["21,50", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./riscal.png", 
+        marca: "Marqués de Riscal",
+        denominacio: "D.O. Rioja",
+        calidad: ["Reserva", "Reserva", "Reserve", "Réserver"],
+        preu: ["19,50", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./enate.png", 
+        marca: "Enate - Cabernet - Merlot",
+        denominacio: "D.O. Somontano",
+        calidad: ["6 messos en barrica", "6 meses en barrica", "6 months in barrel", "6 mois en chêne"],
+        preu: ["12,90", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./barros.png", 
+        marca: "Heredad de Barros",
+        denominacio: "D.O. Ribera del Guadiana",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["12,90", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./habla.png", 
+        marca: "Habla del Silencio",
+        denominacio: "D.O. Vinos de la tierra de Extremadura",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["16,50", "0"]}
+    );
+    /*
+        this.vinosBlancos.push({
+        imatge:"./habla.png", 
+        marca: "Habla del Silencio",
+        denominacio: "D.O. Vinos de la tierra de Extremadura",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["16,50", "0"]}
+    );*/
   }
 });
 

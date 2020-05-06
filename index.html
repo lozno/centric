@@ -53,6 +53,8 @@
                 <div v-show="selectMenu == 'vinos'"> 
                     <div id="tittle"> {{tittleVinoTinto[language]}} </div>
                     <item_vi :lang="language" v-for="(boc, index) in vinosTintos" :current="boc"></item_vi>
+                    <div id="tittle"> {{tittleVinoBlanco[language]}} </div>
+                    <item_vi :lang="language" v-for="(boc, index) in vinosBlancos" :current="boc"></item_vi>
                 </div>
             </div>
             

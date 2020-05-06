@@ -34,6 +34,21 @@
                     <div id="tittle"> {{tittleNormales[language]}} </div>
                     <item :lang="language" :mini="mitja" v-for="(boc, index) in racionesNormales" :current="boc"></item>
                 </div>
+                
+                <div v-show="selectMenu == 'platos'"> 
+                    <div id="tittle"> {{tittleEnsaladas[language]}} </div>
+                    <div id="sub"> {{descEnsaladas[language]}} </div>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index) in ensaladas" :current="boc"></item>
+                    <div id="tittle"> {{tittlePlatosIbericos[language]}} </div>
+                    <div id="sub"> <span v-html="descPlatosIbericos[language]"></span> </div>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index) in platosIbericos" :current="boc"></item>
+                    <div id="tittle"> {{tittlePlatosCombinados[language]}} </div>
+                    <div id="sub"> <span v-html="descPlatosCombinados[language]"></span> </div>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index) in platosCombinados" :current="boc"></item>    
+                    <div id="tittle"> {{tittlePlatosInfantiles[language]}} </div>
+                    <div id="sub"> <span v-html="descPlatosInfantiles[language]"></span> </div>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index) in platosInfantiles" :current="boc"></item>
+                </div>
             </div>
             
             <div id = "base">
@@ -42,6 +57,9 @@
                     <img class ="langImage" src="./es.png" alt="es" v-on:click="changeLanguage(1)"/>
                     <img class ="langImage" src="./en.webp" alt="en" v-on:click="changeLanguage(2)"/>
                     <img class ="langImage" src="./fr.webp" alt="fr" v-on:click="changeLanguage(3)"/>
+                </div>
+                <div id="miniDown" v-show="selectMenu == 'bocadillos'">
+                    <span v-html="explicacionBocatas[language]"></span>
                 </div>
             </div>
         </div>

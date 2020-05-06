@@ -260,8 +260,6 @@ var vm = new Vue({
         desripcio: ["Hamburguesa, calamars a la romana i patates","Hamburguesa, calamares a la romana y patatas","Burger, squid rings in batter and potatoes","Burger, calamars à la romanie et pommes de terre"], 
         preu: ["8,50", "0"]}
     );
-    
-    
   }
 });
 

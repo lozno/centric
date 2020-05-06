@@ -10,6 +10,7 @@ var vm = new Vue({
       tittlePlatosIbericos: ["CARNS IBÈRIQUES","CARNES IBÉRICAS","IBERIAN MEATS","VINADES IBÉRIQUES"],
       tittlePlatosCombinados: ["PLATS COMBINATS", "PLATOS COMBINADOS", "COMBINED DISHES", "PLATS COMBINÉS"],
       tittlePlatosInfantiles: ["PLATS INFANTILS", "PLATOS INFANTILES", "CHILDREN'S DISHES", "PLATS POUR ENFANTS"],
+      tittleVinoTinto: ["VINS NEGRES", "VINOS TINTOS", "RED WINES", "VINS ROUGES"],
       mini:["mini", "mini", "mini", "mini"],
       mitja:["mitja","media","half","demi"],
       descEmbIberics: ["Racions amb torrades incloses", "Raciones con torradas incluídas", "Rations included toast", "Rations inclus toasts"],
@@ -32,6 +33,7 @@ var vm = new Vue({
       platosIbericos: [],
       platosCombinados: [],
       platosInfantiles: [],
+      vinosTintos: [],
       explicacionBocatas: ["*Ingredients extra (Formatge, ceba, beicon) <b>+0.50</b> si no es diu el contrari","*Ingredientes extra (Queso, cebolla, beicon) <b>+0.50</b> si no se dice lo contrario","Extra ingredients (Cheese, onion, bacon) <b> +0.50 </b> unless otherwise stated","Ingrédients supplémentaires (fromage, oignon, bacon) <b> +0,50 </b> sauf indication contraire"]
   },
   
@@ -259,6 +261,56 @@ var vm = new Vue({
         nom: ["Nº6 Infantil", "Nº6 Infantil", "Nº6 for children", "Nº6 d'enfant"],
         desripcio: ["Hamburguesa, calamars a la romana i patates","Hamburguesa, calamares a la romana y patatas","Burger, squid rings in batter and potatoes","Burger, calamars à la romanie et pommes de terre"], 
         preu: ["8,50", "0"]}
+    );
+    
+    this.vinosTintos.push({
+        imatge:"./3fincas.png", 
+        marca: "Castell de Peralada 3 Finques",
+        denominacio: "D.O. Empordà",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["12,00", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./cigonyes.png", 
+        marca: "Cigonyes",
+        denominacio: "D.O. Empordà",
+        calidad: ["5 messos en barrica", "5 meses en barrica", "5 months in barrel", "5 mois en chêne"],
+        preu: ["12,85", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./bancal.png", 
+        marca: "Bancal del Bosc",
+        denominacio: "D.O. Montsant",
+        calidad: ["6 messos en barrica", "6 meses en barrica", "6 months in barrel", "6 mois en chêne"],
+        preu: ["15,00", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./boig.png", 
+        marca: "Boig per tu",
+        denominacio: "D.O. Montsant",
+        calidad: ["6 messos en barrica", "6 meses en barrica", "6 months in barrel", "6 mois en chêne"],
+        preu: ["16,90", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./rotllan.png", 
+        marca: "Rotllan Torra",
+        denominacio: "D.O. Priorat",
+        calidad: ["Reserva", "Reserva", "Reserve", "Réserver"],
+        preu: ["16,00", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./haza.png", 
+        marca: "Condado de Haza",
+        denominacio: "D.O. Ribera del Duero",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["16,90", "0"]}
+    );
+    this.vinosTintos.push({
+        imatge:"./protos.png", 
+        marca: "Protos",
+        denominacio: "D.O. Ribera del Duero",
+        calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
+        preu: ["20,50", "0"]}
     );
   }
 });

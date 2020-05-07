@@ -70,11 +70,11 @@ var vm = new Vue({
     this.bocadillosCalientes.push({imatge:"./BocFrankfurt.png", nom: ["Frankfurt", "Frankfurt", "Frankfurt", "Frankfurt"], desripcio: ["","","",""], preu: ["3.75", "0"]});
     this.bocadillosCalientes.push({imatge:"./BocBrasburt.png", nom: ["Brasburt", "Brasburt", "Brasburt", "Brasburt"], desripcio: ["","","",""], preu: ["4.50", "0"]});
     this.bocadillosCalientes.push({imatge:"./BocCalamares.png", nom: ["Calamars", "Calamares", "Squids", "Calamars"], desripcio: ["","","",""], preu: ["5.50", "0"]});
-    this.bocadillosCalientes.push({imatge:"./BocTortilla.png", nom: ["Truita francesa", "Tortilla francesa", "Omelette", "Omelette"], desripcio: ["Ingredient extra +0.75€<br>Pernil o tonyina +1.75€ &nbsp; &nbsp; Anxoves +3€","Ingrediente extra +0.75€","Extra ingredient +0.75€","Ingrédient supplémentaire +0.75€"], preu: ["4.25", "3.25"]});
+    this.bocadillosCalientes.push({imatge:"./BocTortilla.png", nom: ["Truita francesa", "Tortilla francesa", "Omelette", "Omelette"], desripcio: ["Formatge o ceba +0.75€<br>Pernil o tonyina +1.75€ &nbsp; &nbsp; Anxoves +3.75€","Queso o cebolla +0.75€<br>Jamón o atún +1.75€ &nbsp; &nbsp; Anchoas +3.75€","Extra ingredient +0.75€","Ingrédient supplémentaire +0.75€"], preu: ["4.25", "3.25"]});
     this.bocadillosCalientes.push({imatge:"./BocSalchichas.png", nom: ["Saltxitxes", "Salchichas", "Sausages", "Saucisses"], desripcio: ["","","",""], preu: ["4.50", "3.25"]});
     this.bocadillosCalientes.push({imatge:"./BocButifarra.png", nom: ["Botifarra del país", "Butifarra del país", "Botifarra (large Catalan pork sausage)", "Botifarra (Longue saucisse de porc catalane)"], desripcio: ["","","",""], preu: ["5.00", "0"]});
     this.bocadillosCalientes.push({imatge:"./BocChistorra.png", nom: ["Xistorra", "Chistorra", "Thin chorizo", "Chorizo mince"], desripcio: ["","","",""], preu: ["4.50", "3.25"]});
-    this.bocadillosCalientes.push({imatge:"./BocPinchito.png", nom: ["Broquetes", "Pinchitos", "Little brochette", "Petit broquette"], desripcio: ["","","",""], preu: ["4.85", "3.25"]});
+    this.bocadillosCalientes.push({imatge:"./BocPinchito.png", nom: ["Broquetes", "Pinchitos", "Little brochette", "Petit broquette"], desripcio: ["","","",""], preu: ["4.85", "0"]});
   
     this.racionesIbericas.push({imatge:"./RacionJamon.png", nom: ["Pernil", "Jamón", "Ham", "Jambon"], desripcio: ["Tallat a mà","Cortado a mano","Hand cut","Coupe à la main"], preu: ["25.00", "19.00"]});
     this.racionesIbericas.push({imatge:"./RacionLomo.png", nom: ["Llom<br>Llomet", "Lomo<br>Lomito", "Pork loin<br>Pork little loin", "Filet de porc<br>Filet petit de porc"], desripcio: ["","","",""], preu: ["23.00", "17.00"]});

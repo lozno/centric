@@ -1,94 +1,257 @@
-.noSelected{
-    background-color: #FFCDBA;
-    margin: auto;
+.noSelected, .selected{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border: none;
-    padding: 0.5rem 0rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 0.8rem;
-    margin: 0.2rem 0.1rem;
     cursor: pointer;
     width: 7rem;
     font-style: italic;
     font-weight: bold;
-    color: #D50B01;
 }
 
 .selected{
     background-color: #D50B01;
-    margin: auto;
-    border: none;
-    padding: 0.5rem 0rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.8rem;
-    margin: 0.2rem 0.1rem;
-    cursor: pointer;
-    width: 7rem;
-    font-style: italic;
-    font-weight: bolder;
     color: #FFCDBA;
 }
 
-#superBody{
-    width: 22.5rem;
+.noSelected{
+    background-color: #FFCDBA;
+    color: #D50B01;
+}
+
+#body{
+    display: block;
+    margin: 0rem;
     background-color: #D50B01;
-    margin: auto;
+    width: 100%;
+    text-align:center;
 }
 
 #boddy{
-    width: 22.5rem;
     font-family: "Segoe UI";
+    background-color: #D50B01;
+    border: 0rem;
+    padding: 0rem;
+    display: inline-block;
+    text-align: left;
 }
+
+@media all and (orientation:portrait) and (max-width:58.7rem){
+    #menu{
+        width: 23.5rem;
+        height: 5rem;
+    }
+    
+    #tittleNegocio, #subtituloNegocio, #alergias,#contacto{
+        width: 23.5rem;
+    }
+    
+    #items{
+        margin-top: 7rem;
+        min-height: calc(100% - 7rem);
+        min-height: -webkit-calc(100% - 7rem);
+        min-height: -moz-calc(100% - 7rem);
+    }
+    
+    #base {
+        padding-right: 15.5rem;
+    }
+    
+    #miniDown {
+        width: 15rem;
+    }
+}
+
+@media all and (orientation:portrait) and (min-width:58.7rem){
+    #menu{
+        width: 50rem;
+        height: 2.5rem;
+    }
+    
+    #tittleNegocio, #subtituloNegocio, #alergias, #contacto{
+        width: 50rem;
+    }
+    
+    #items{
+        margin-top: 4.5rem;
+        min-height: calc(100% - 4.5rem);
+        min-height: -webkit-calc(100% - 4.5rem);
+        min-height: -moz-calc(100% - 4.5rem);
+    }
+    
+    #base {
+        padding-right: 42rem;
+    }
+    
+    #miniDown {
+        width: 41.5rem;
+    }
+}
+
+@media all and (orientation:portrait){
+    #menu{
+        margin-top: 2rem;
+        position: fixed;
+        align-items: center;
+        text-align: center;
+        z-index:1;
+    }
+    
+    #items{
+        position: relative;
+        z-index:0;
+    }
+    
+    .noSelected, .selected{
+        display:inline-block;
+    }
+    
+    #base {
+        position: fixed;
+        background-color: #FFCDBA;
+        height: 2rem;
+        width: 8rem;
+        z-index:1;
+    }
+    
+    #miniDown {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1.85rem;
+        margin-left: 8.2rem;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 0.6rem;
+        color: #a20800;
+        z-index: 2;
+        height: 2rem;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:58.7rem){
+    #items, #tittleNegocio, #subtituloNegocio, #alergias, #contacto{
+        width: 23.5rem;
+    }
+}
+
+@media all and (min-width:58.7rem) and (max-width:83.7rem){
+    #items{
+        width: 50rem;
+        columns: 2; 
+        -webkit-columns: 2; 
+        -moz-columns: 2;
+    }
+    
+    #tittleNegocio, #subtituloNegocio, #alergias, #contacto{
+        width: 50rem;
+    }
+    
+    #break2{
+        break-before: always;
+        -moz-column-break-before: always;
+        -webkit-column-break-before: always;
+    }
+}
+
+@media all and (min-width:83.7rem){
+    #items{
+        width: 75rem;
+        columns: 3; 
+        -webkit-columns: 3; 
+        -moz-columns: 3;
+    }
+    
+    #tittleNegocio, #subtituloNegocio, #alergias, #contacto{
+        width: 75rem;
+    }
+    
+    #break3{
+        break-before: always;
+        -moz-column-break-before: always;
+        -webkit-column-break-before: always;
+    }
+}
+
+@media all and (orientation:landscape) and (max-height:18rem){
+    #menu, #base{
+        position: absolute;
+    }
+}
+
+@media all and (orientation:landscape)and (min-height:18rem){
+    #menu, #base{
+        position: fixed;
+    }
+}
+
+@media all and (orientation:landscape){
+    #menu{
+        width: 8rem;
+        height: 13rem;
+    }
+    
+    .noSelected, .selected{
+        display:block;
+    }
+    
+    #items{
+        margin-left: 8rem;
+        min-height: 100%;
+    }
+    
+    #base {
+        background-color: #FFCDBA;
+        margin-top: 13rem;
+        width: 8rem;
+    }
+    
+    #miniDown {
+        background-color: #FFCDBA;
+        padding: 0.2rem;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 0.6rem;
+        color: #a20800;
+    }
+}
+
+#languages{
+    align-items: center;
+    text-align: center;
+}
+
+.langImage{
+    display:inline-block;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    width: 1.7rem;
+    height: 1.2rem;
+}
+
+#menu{
+    background-image: url(./fons.jpg);
+    background-size: 100% auto;
+}
+
 #items{
     background-color: #FFCDBA;
-    padding-top: 5rem;
-    padding-bottom: 3.5rem;
-    width: 22.5rem;
 }
 
-#menu {
-    right: 0;
-    left: 0;
-    position: fixed;
-    margin: auto;
+#extern {
+    padding: 0.3rem;
     width: 22.5rem;
-    height: 5rem;
-    background-image: url(./fons.png);
-    background-size: 100% auto;
-}
-
-#base {
-    right: 0;
-    left: 0;
-    bottom: 0;
-    position: fixed;
-    margin: auto;
-    width: 22.5rem;
-    height: 3rem;
-    background-image: url(./fons.png);
-    background-size: 100% auto;
-}
-
-#info {
-    right: 0.1rem;
-    left: 0.1rem;
-    bottom: 3.2rem;
-    position: fixed;
-    margin: auto;
-    width: 25rem;
-    height: 3.6rem;
-    font-size: 0.7rem;
-    background-color: #FFCDBA;
-}
-
-#menu2 {
-    width: 22.5rem;
-    margin: auto;
-    margin-left: 0.2rem;
-    margin-top: 0.2rem;
+    min-height: 3rem;
+    display: inline-block;
+    color: #a20800;
 }
 
 #imagen{
@@ -109,30 +272,22 @@
     font-style: italic;
 }
 
-#extern {
-    width: 22.5rem;
-    height: 3.3rem;
-    display: inline-block;
-    color: #a20800;
-}
-
-#internImatge {
-    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-    height: 100%;
-    float: left;
-}
-
 #internNom {
     margin: 0.2rem 0.1rem 0.1rem 0.1rem;
     width: 14rem;
     float: left;
 }
 
+#internImatgeVi {
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+    height: 4rem;
+    float: left;
+}
+
 #internPreu {
     text-align: right;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-    width: 3.5rem;
-    height: 100%;
+    width: 3.75rem;
     float: right;
     font-size: 0.85rem;
     font-weight: bold;
@@ -145,14 +300,13 @@
     color: #a20800;
 }
 
-#miniDown {
-    background-color: #FFCDBA;
-    margin-top: -0.1rem;
-    padding-left: 1.5rem;
+#tittle{
+    font-size: 0.9rem;
     font-style: italic;
-    font-weight: normal;
-    font-size: 0.6rem;
-    color: #a20800;
+    font-weight: bold;
+    padding-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
 }
 
 #sub {
@@ -163,25 +317,6 @@
     font-weight: bold;
     font-size: 0.8rem;
     color: #a20800;
-}
-
-#tittle{
-    font-size: 0.9rem;
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    margin-left: 0.3rem;
-}
-
-.langImage{
-    width: 2rem;
-    height: 1.5rem;
-}
-
-#languages{
-    margin-left: 13rem;
-    margin-top: 0.35rem;
 }
 
 .viPicture{
@@ -203,25 +338,61 @@
     margin-top: -0.2rem;
 }
 
-#desc{
-    font-size: 0.75rem;
-    font-style: italic;
-}
-
 #internPreuVi {
     text-align: right;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem;
     width: 3.5rem;
-    height: 100%;
     float: right;
     font-size: 1rem;
     font-weight: bold;
     
 }
 
-#externVi {
-    width: 22.5rem;
-    height: 7rem;
-    display: inline-block;
-    color: #a20800;
+#desc{
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+@font-face {
+font-family: Lemonada-Bold;
+src: url(./Lemonada-Bold.ttf);
+}
+
+#tittleNegocio{
+    font-family: Lemonada-Bold;
+    color: #D50B01;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#subtituloNegocio{
+    font-family: Lemonada-Bold;
+    position: absolute;
+    color: #D50B01;
+    top: 4.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#contacto{
+    font-family: Lemonada-Bold;
+    position: absolute;
+    color: #D50B01;
+    top: 7rem;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#alergias{
+    position: absolute;
+    color: #D50B01;
+    top: 15rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+#alergenos{
+    width: 14rem;
 }

@@ -33,32 +33,32 @@
                     <span v-html="terraza[language]"></span>
                 </div>
             </div>
-            
-            <div id ="itemsNo"  ref="toolbarChat">
-                <div v-show="selectMenu == 'none'" class="inline"> 
-                        <div id='tittleNegocio'>
-                            Cèntric
-                        </div>
+            <div id ="itemsNo" v-show="selectMenu == 'none'" >
+                <div class="inline"> 
+                    <div id='tittleNegocio'>
+                        Cèntric
+                    </div>
+                    <br>
+                    <div id='subtituloNegocio'>
+                        SNACK - BAR - FRANKFURT
+                    </div>
+                    <br>
+                    <div id='contacto'>
+                        972-30-56-07
                         <br>
-                        <div id='subtituloNegocio'>
-                            SNACK - BAR - FRANKFURT
-                        </div>
+                        Carrer de les Botines, 25
                         <br>
-                        <div id='contacto'>
-                            972-30-56-07
-                            <br>
-                            Carrer de les Botines, 25
-                            <br>
-                            17200 Palafrugell (GIRONA)
-                            <br>
-                        </div>
-                        <div id='alergias'>
-                            <image id="alergenos" src="./alergenos.png"></image>
-                            <br>
-                            {{alergias[language]}}
-                        </div>
+                        17200 Palafrugell (GIRONA)
+                        <br>
+                    </div>
+                    <div id='alergias'>
+                        <image id="alergenos" src="./alergenos.png"></image>
+                        <br>
+                        {{alergias[language]}}
+                    </div>
                 </div>
-                
+            </div>
+            <div id ="items"  ref="toolbarChat">
                 <div v-show="selectMenu == 'bocadillos'"> 
                     <div id="tittle"> {{tittleFrios[language]}} </div>
                     <item :lang="language" :mini="mini" v-for="(boc, index, key) in bocadillosFrios" :current="boc" v-bind:key="boc.imatge"></item>

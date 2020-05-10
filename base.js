@@ -183,7 +183,7 @@ var vm = new Vue({
     this.bocadillosCalientes.push({
         imatge:"./BocTortilla.jpg", 
         nom: ["Truita francesa", "Tortilla francesa", "Omelette", "Omelette"], 
-        desripcio: ["Formatge o ceba +0.75€<br>Pernil o tonyina +1.75€ &nbsp; &nbsp; Anxoves +3.75€","Queso o cebolla +0.75€<br>Jamón o atún +1.75€ &nbsp; &nbsp; Anchoas +3.75€","Cheese or onion +0.75€<br>Ham or tuna +1.75€ &nbsp; &nbsp; Anchovies + 3.75€","Fromage ou oignon +0,75€<br>Jambon ou thon +1,75€ &nbsp; &nbsp; Anchois +3,75€"], 
+        desripcio: ["Formatge o ceba +0.75€<br>Pernil o tonyina +1.75€ &nbsp; &nbsp; Anxoves +3.50€","Queso o cebolla +0.75€<br>Jamón o atún +1.75€ &nbsp; &nbsp; Anchoas +3.50€","Cheese or onion +0.75€<br>Ham or tuna +1.75€ &nbsp; &nbsp; Anchovies + 3.50€","Fromage ou oignon +0,75€<br>Jambon ou thon +1,75€ &nbsp; &nbsp; Anchois +3,50€"], 
         preu: ["4.25", "3.25"]
     });
     this.bocadillosCalientes.push({
@@ -381,12 +381,6 @@ var vm = new Vue({
     );
     
     this.platosCombinados.push({
-        imatge:"./n0.jpg", 
-        nom: ["Nº0", "Nº0", 'Nº0', 'Nº0'], 
-        desripcio: ["Ous ferrats amb patates","Huevos fritos con patatas","Fried eggs with potatoes","Oeufs au plat avec pommes de terre"], 
-        preu: ["7,85", "0"]}
-    );
-    this.platosCombinados.push({
         imatge:"./n1.jpg", 
         nom: ["Nº1", "Nº1", 'Nº1', 'Nº1'], 
         desripcio: ["Pollaste, amanida, ou ferrat i patates", "Poyo, ensalada, huevo frito y patatas", "Chicken, salad, fried egg and potatoes", "Poulet, salade, œuf au plat et pommes de terre"], 
@@ -419,8 +413,8 @@ var vm = new Vue({
     this.platosCombinados.push({
         imatge:"./n6.jpg", 
         nom: ["Nº6", "Nº6", 'Nº6', 'Nº6'],
-        desripcio: ["Dues sipies, patates i amanida","Dos sepias, patatas y ensalada","Two squid, potatoes and salad","Deux seiches, pommes de terre et salade"], 
-        preu: ["13,85", "0"]}
+        desripcio: ["Salsitxes amb patates","Salchichas con patatas","Salsitxes amb patates","Saucisses aux pommes de terre"], 
+        preu: ["8,85", "0"]}
     );
     this.platosCombinados.push({
         imatge:"./n7.jpg", 
@@ -431,14 +425,14 @@ var vm = new Vue({
     this.platosCombinados.push({
         imatge:"./n8.jpg", 
         nom: ["Nº8", "Nº8", 'Nº8', 'Nº8'],
-        desripcio: ["Salsitxes amb patates","Salchichas con patatas","Salsitxes amb patates","Saucisses aux pommes de terre"], 
-        preu: ["8,85", "0"]}
+        desripcio: ["Dues sipies, patates i amanida","Dos sepias, patatas y ensalada","Two squid, potatoes and salad","Deux seiches, pommes de terre et salade"], 
+        preu: ["13,85", "0"]}
     );
     this.platosCombinados.push({
         imatge:"./n9.jpg", 
         nom: ["Nº9", "Nº9", 'Nº9', 'Nº9'],
-        desripcio: ["Mongetes amb butifarra","Judias con butifarra",'Beans with "Botifarra" (large Catalan pork sausage)','Haricots aux "Botifarra" (Longue saucisse de porc catalane)'], 
-        preu: ["9,25", "0"]}
+        desripcio: ["Dos calamars a la planxa, patates i amanida","Dos calamares a la plancha, patatas y ensalada","Two grilled squid, potatoes and salad","Deux calamars grillés, pommes de terre et salade"], 
+        preu: ["13,85", "0"]}
     );
     this.platosCombinados.push({
         imatge:"./n10.jpg", 
@@ -458,7 +452,18 @@ var vm = new Vue({
         desripcio: ["Xoriço, ou ferrat, patates i pebrot","Chorizo, huevo frito, patatas y pimiento","Sausage, fried egg, potatoes and pepper","Saucisse, œuf au plat, pommes de terre et poivre"], 
         preu: ["9,85", "0"]}
     );
-    
+    this.platosCombinados.push({
+        imatge:"./n13.jpg", 
+        nom: ["Nº13", "Nº13", 'Nº13', 'Nº13'],
+        desripcio: ["Mongetes amb butifarra","Judias con butifarra",'Beans with "Botifarra" (large Catalan pork sausage)','Haricots aux "Botifarra" (Longue saucisse de porc catalane)'], 
+        preu: ["9,25", "0"]}
+    );
+    this.platosCombinados.push({
+        imatge:"./n14.jpg", 
+        nom: ["Nº14", "Nº14", 'Nº14', 'Nº14'], 
+        desripcio: ["Ous ferrats amb patates","Huevos fritos con patatas","Fried eggs with potatoes","Oeufs au plat avec pommes de terre"], 
+        preu: ["7,85", "0"]}
+    );
     
     this.platosInfantiles.push({
         imatge:"./n1infantil.jpg", 

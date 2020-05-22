@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div id ="items"  ref="toolbarChat">
+            <div id ="items"  ref="toolbarChat" v-show="selectMenu != 'none'">
                 <div v-show="selectMenu == 'bocadillos'"> 
                     <div id="tittle"> {{tittleFrios[language]}} </div>
                     <item :lang="language" :mini="mini" v-for="(boc, index, key) in bocadillosFrios" :current="boc" v-bind:key="boc.imatge"></item>

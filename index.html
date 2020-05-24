@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="HandheldFriendly" content="true"/>
@@ -21,10 +22,10 @@
             
             <div id = "base">
                 <div id ="languages">
-                    <img class ="langImage" src="./ca.png" alt="ca" v-on:click="changeLanguage(0)"/>
-                    <img class ="langImage" src="./es.png" alt="es" v-on:click="changeLanguage(1)"/>
-                    <img class ="langImage" src="./en.png" alt="en" v-on:click="changeLanguage(2)"/>
-                    <img class ="langImage" src="./fr.png" alt="fr" v-on:click="changeLanguage(3)"/>
+                    <img class ="langImage" src="./textures/ca.png" alt="ca" v-on:click="changeLanguage(0)"/>
+                    <img class ="langImage" src="./textures/es.png" alt="es" v-on:click="changeLanguage(1)"/>
+                    <img class ="langImage" src="./textures/en.png" alt="en" v-on:click="changeLanguage(2)"/>
+                    <img class ="langImage" src="./textures/fr.png" alt="fr" v-on:click="changeLanguage(3)"/>
                 </div>
                 <div id="miniDown" v-show="selectMenu == 'bocadillos'">
                     <span v-html="explicacionBocatas[language]"></span>
@@ -52,7 +53,7 @@
                         <br>
                     </div>
                     <div id='alergias'>
-                        <image id="alergenos" src="./alergenos.png"></image>
+                        <img id="alergenos" src="./textures/alergenos.png"/>
                         <br>
                         {{alergias[language]}}
                     </div>
@@ -61,35 +62,35 @@
             <div id ="items"  ref="toolbarChat" v-show="selectMenu != 'none'">
                 <div v-show="selectMenu == 'bocadillos'"> 
                     <div id="tittle"> {{tittleFrios[language]}} </div>
-                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in bocadillosFrios" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in bocadillosFrios" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                     <div id="break2"></div><div id="break3"></div>
                     <div id="tittle"> {{tittleCalientes[language]}} </div>
-                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in bocadillosCalientes" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in bocadillosCalientes" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                 </div>
                 
                 <div v-show="selectMenu == 'raciones'"> 
                     <div id="tittle"> {{tittleIbericas[language]}} </div>
                     <div id="sub"> {{descEmbIberics[language]}} </div>
-                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in racionesIbericas" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in racionesIbericas" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                     <div id="break3"></div>
                     <div id="tittle"> {{tittleNormales[language]}} </div>
-                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in racionesNormales" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in racionesNormales" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                 </div>
                 
                 <div v-show="selectMenu == 'platos'"> 
                     <div id="tittle"> {{tittleEnsaladas[language]}} </div>
                     <div id="sub"> {{descEnsaladas[language]}} </div>
-                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in ensaladas" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in ensaladas" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                     <div id="tittle"> {{tittlePlatosIbericos[language]}} </div>
                     <div id="sub"> <span v-html="descPlatosIbericos[language]"></span> </div>
-                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in platosIbericos" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in platosIbericos" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                     <div id="break3"></div>
                     <div id="tittle"> {{tittlePlatosCombinados[language]}} </div>
                     <div id="sub"> <span v-html="descPlatosCombinados[language]"></span> </div>
-                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in platosCombinados" :current="boc" v-bind:key="boc.imatge"></item>    
+                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in platosCombinados" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>  
                     <div id="tittle"> {{tittlePlatosInfantiles[language]}} </div>
                     <div id="sub"> <span v-html="descPlatosInfantiles[language]"></span> </div>
-                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in platosInfantiles" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mitja" v-for="(boc, index, key) in platosInfantiles" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                 </div>
                 
                 <div v-show="selectMenu == 'vinos'"> 
@@ -104,11 +105,11 @@
                 </div>
                 
                 <div v-show="selectMenu == 'aperitivos'"> 
-                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in listaAperitivos" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in listaAperitivos" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                 </div>
                 
                 <div v-show="selectMenu == 'postres'"> 
-                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in listaPostres" :current="boc" v-bind:key="boc.imatge"></item>
+                    <item :lang="language" :mini="mini" v-for="(boc, index, key) in listaPostres" :current="boc" v-bind:key="boc.imatge" @big="big" @small="small"></item>
                 </div>
             </div>
             
@@ -116,7 +117,7 @@
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-    <script src="./component_item.js"></script>
-    <script src="./component_item_vins.js"></script>
-    <script src="./base.js"></script>
+    <script src="./js/component_item.js"></script>
+    <script src="./js/component_item_vins.js"></script>
+    <script src="./js/base.js"></script>
 </html>

@@ -4,14 +4,14 @@ Vue.component('item', {
     template: `
     
     
-    <div id = "extern">
+    <div id="extern">
         <div v-show="current.big">
             <div id="nombreBig">
                 <span v-html="current.nom[lang]"></span>
             </div>
             <br>
             <div id="centralBig">
-                <img id ="imagenBig" v-bind:src="current.imatge" alt="Jamón Iberico" v-on:click="$emit('small',current)"/>
+                <img id ="imagenBig" v-bind:src="current.imatge" alt="Jamón Iberico" v-on:click="$emit('small',current)"  onshow="$emit('show')"/>
                 <div id="internPreuBig">
                     {{current.preu[0]}}€
                     <br>

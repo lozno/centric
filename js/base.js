@@ -1,7 +1,6 @@
 var vm = new Vue({
   el: '#boddy',
   data: {
-      state: 'big',
       language: 0,
       tittleBocadillos: ["Entrepans","Bocadillos","Sandwiches","Sandwiches"],
       tittlePlatos: ["Plats","Platos","Dishes","Plats"],
@@ -35,8 +34,14 @@ var vm = new Vue({
       vinos: "noSelected",
       aperitivos:"noSelected",
       selectMenu: "none",
-      bocadillosFrios: [],
-      bocadillosCalientes: [],
+      bocadillosFrios:[{
+        big: false,
+        imatge:"./fotos/bocadillos/BocJamon.jpg", 
+        nom: ["Pernil", "Jamón", "Ham", "Jambon"], 
+        desripcio: ["","","",""],
+        preu: ["4.50", "2.75"]
+    }],
+      bocadillosCalientes:[],
       racionesIbericas: [],
       racionesNormales: [],
       ensaladas: [],
@@ -74,13 +79,36 @@ var vm = new Vue({
         localStorage.barcentricmenusavelanguage = this.language;
     },
     big: function (obj){
+        let el = event.srcElement;
+        setTimeout(() => { 
+            // Vigilar que no surti per abaix
+            let p = el.parentNode.parentNode.parentNode.parentNode;
+            let style = p.currentStyle || window.getComputedStyle(p);
+            let bottomItem = el.parentNode.parentNode.offsetTop + el.parentNode.parentNode.offsetHeight + parseInt(style.marginTop, 10) + 5;
+            let bottomWindow = window.pageYOffset + window.innerHeight;
+            let diference = bottomItem - bottomWindow;
+            if (diference > 0) window.scrollTo(0, window.pageYOffset + diference);
+            // Vigilar que no surti per adalt
+            diference =  el.parentNode.parentNode.offsetTop - window.pageYOffset;
+            if (diference < 0) window.scrollTo(0, window.pageYOffset + diference);
+        }, 50);
         obj.big = true;
     },
     small: function (obj){
-        obj.big = false;
+         obj.big = false;
+    },
+    show: function(){
+        console.log("TIKITAKA");
+        if (this.centration){
+            console.log("Centrant");
+            window.scrollTo(0, this.centration.parentNode.parentNode.offsetTop -200);
+            this.centration = null;
+        }
     }
   },
-  mounted() {
+  created() {
+      
+      
     this.language = localStorage.barcentricmenusavelanguage;
     
     if (this.language !== "0" && this.language !== "1" && this.language !== "2" && this.language !== "3"){
@@ -103,8 +131,7 @@ var vm = new Vue({
         localStorage.barcentricmenusavelanguage = this.language;
     }
       
-      
-      
+    this.bocadillosFrios=[];
     this.bocadillosFrios.push({
         big: false,
         imatge:"./fotos/bocadillos/BocJamon.jpg", 
@@ -169,6 +196,7 @@ var vm = new Vue({
         preu: ["11.00", "6.00"]
     });
     
+    this.bocadillosCalientes=[];
     this.bocadillosCalientes.push({
         big: false,
         imatge:"./fotos/bocadillos/BocLomo.jpg", 
@@ -268,6 +296,7 @@ var vm = new Vue({
         preu: ["4.85", "0"]
     });
   
+    this.racionesIbericas=[];
     this.racionesIbericas.push({
         big: false,
         imatge:"./fotos/raciones/RacionJamon.jpg", 
@@ -304,6 +333,7 @@ var vm = new Vue({
         preu: ["14.00", "0"]
     });
 
+    this.racionesNormales=[];
     this.racionesNormales.push({
         big: false,
         imatge:"./fotos/raciones/RacionBravas.jpg", 
@@ -403,6 +433,7 @@ var vm = new Vue({
         preu: ["12.00", "0"]
     });
   
+    this.ensaladas=[];
     this.ensaladas.push({
         big: false,
         imatge:"./fotos/platos/PlatoEnsalada.jpg", 
@@ -418,7 +449,7 @@ var vm = new Vue({
         preu: ["11,50", "0"]}
     );
     
-    
+    this.platosIbericos=[];
     this.platosIbericos.push({
         big: false,
         imatge:"./fotos/platos/PlatoChuleta.jpg", 
@@ -462,6 +493,7 @@ var vm = new Vue({
         preu: ["16,00", "0"]}
     );
     
+    this.platosCombinados=[];
     this.platosCombinados.push({
         big: false,
         imatge:"./fotos/platos/n1.jpg", 
@@ -561,6 +593,7 @@ var vm = new Vue({
         preu: ["7,85", "0"]}
     );
     
+    this.platosInfantiles=[];
     this.platosInfantiles.push({
         big: false,
         imatge:"./fotos/platos/n1infantil.jpg", 
@@ -604,6 +637,7 @@ var vm = new Vue({
         preu: ["8,50", "0"]}
     );
     
+    this.vinosTintos=[];
     this.vinosTintos.push({
         big: false,
         imatge:"./fotos/vinos/3fincas.png", 
@@ -733,7 +767,7 @@ var vm = new Vue({
         preu: ["16,50", "0"]}
     );
     
-    
+    this.vinosBlancos=[];
     this.vinosBlancos.push({
         big: false,
         imatge:"./fotos/vinos/mugaBlanco.png", 
@@ -759,7 +793,7 @@ var vm = new Vue({
         preu: ["11,00", "0"]}
     );
     
-    
+    this.vinosRosados=[];
     this.vinosRosados.push({
         big: false,
         imatge:"./fotos/vinos/campanas.png", 
@@ -785,7 +819,7 @@ var vm = new Vue({
         preu: ["10,50", "0"]}
     );
     
-    
+    this.listaAperitivos=[];
     this.listaAperitivos.push({
         big: false,
         imatge:"./fotos/aperitivos/berberechos.jpg", 
@@ -836,7 +870,7 @@ var vm = new Vue({
         preu: ["1,40", "0"]}
     );
     
-    
+    this.listaPostres=[];
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/crema.jpg", 
@@ -908,6 +942,7 @@ var vm = new Vue({
         preu: ["3,00", "0"]}
     );
     
+    this.cavas=[];
     this.cavas.push({
         big: false,
         imatge:"./fotos/vinos/peraladaGrande.png", 
@@ -940,6 +975,7 @@ var vm = new Vue({
         calidad: ["375ml", "375ml", "375ml", "375ml"],
         preu: ["11,50", "0"]}
     );
+
   }
 });
 

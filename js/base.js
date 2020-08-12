@@ -498,7 +498,7 @@ var vm = new Vue({
         big: false,
         imatge:"./fotos/platos/n1.jpg", 
         nom: ["Nº1", "Nº1", 'Nº1', 'Nº1'], 
-        desripcio: ["Pollaste, amanida, ou ferrat i patates", "Poyo, ensalada, huevo frito y patatas", "Chicken, salad, fried egg and potatoes", "Poulet, salade, œuf au plat et pommes de terre"], 
+        desripcio: ["Pollaste, amanida, ou ferrat i patates", "Pollo, ensalada, huevo frito y patatas", "Chicken, salad, fried egg and potatoes", "Poulet, salade, œuf au plat et pommes de terre"], 
         preu: ["11,00", "0"]}
     );
     this.platosCombinados.push({

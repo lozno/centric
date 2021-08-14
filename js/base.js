@@ -193,7 +193,7 @@ var vm = new Vue({
         imatge:"./fotos/bocadillos/BocJamonIberico.jpg", 
         nom: ["Pernil ibèric de gla", "Jamón ibérico de bellota", "Acorn-fed iberian ham", "Jambon ibérique de gland"], 
         desripcio: ["Tallat a mà","Cortado a mano","Hand cut","Coupe à la main"], 
-        preu: ["11.00", "6.00"]
+        preu: ["11.00", "6.75"]
     });
     
     this.bocadillosCalientes=[];

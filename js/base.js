@@ -692,7 +692,7 @@ var vm = new Vue({
         marca: "Protos",
         denominacio: "D.O. Ribera del Duero",
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
-        preu: ["20,50", "0"]}
+        preu: ["22,50", "0"]}
     );
     this.vinosTintos.push({
         big: false,
@@ -700,7 +700,7 @@ var vm = new Vue({
         marca: "Pesquera",
         denominacio: "D.O. Ribera del Duero",
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
-        preu: ["21,00", "0"]}
+        preu: ["26,00", "0"]}
     );
     this.vinosTintos.push({
         big: false,
@@ -716,7 +716,7 @@ var vm = new Vue({
         marca: "Viña Pomal",
         denominacio: "D.O. Rioja",
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
-        preu: ["12,75", "0"]}
+        preu: ["13,75", "0"]}
     );
     this.vinosTintos.push({
         big: false,
@@ -724,7 +724,7 @@ var vm = new Vue({
         marca: "Marqués de Cáceres",
         denominacio: "D.O. Rioja",
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
-        preu: ["12,85", "0"]}
+        preu: ["13,85", "0"]}
     );
     this.vinosTintos.push({
         big: false,
@@ -732,7 +732,7 @@ var vm = new Vue({
         marca: "Muga",
         denominacio: "D.O. Rioja",
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
-        preu: ["21,50", "0"]}
+        preu: ["25,00", "0"]}
     );
     this.vinosTintos.push({
         big: false,

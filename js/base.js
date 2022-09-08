@@ -180,14 +180,14 @@ var vm = new Vue({
         imatge:"./fotos/bocadillos/BocLomoIberico.jpg", 
         nom: ["Llom ibèric de gla", "Lomo ibérico de bellota", "Ibeian acorn-fed pork lion sausage", "Échine ibérique de gland"], 
         desripcio: ["","","",""], 
-        preu: ["11.00", "5.50"]
+        preu: ["11.00", "6.00"]
     });
     this.bocadillosFrios.push({
         big: false,
         imatge:"./fotos/bocadillos/BocJamonIberico.jpg", 
         nom: ["Pernil ibèric de gla", "Jamón ibérico de bellota", "Acorn-fed iberian ham", "Jambon ibérique de gland"], 
         desripcio: ["Tallat a mà","Cortado a mano","Hand cut","Coupe à la main"], 
-        preu: ["12.00", "6.75"]
+        preu: ["12.00", "7.25"]
     });
     
     this.bocadillosCalientes=[];
@@ -361,7 +361,7 @@ var vm = new Vue({
         imatge:"./fotos/raciones/RacionBoquerones.jpg", 
         nom: ["Seitons", "Boquerones", "European anchovies salad", "Anchois frais"], 
         desripcio: ["Amb pa amb tomata","Con pan con tomate","With tomato bread","Avec pain aux tomates"], 
-        preu: ["7.25", "4.75"]
+        preu: ["7.25", "5.25"]
     });
     this.racionesNormales.push({
         big: false,

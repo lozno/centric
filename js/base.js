@@ -346,8 +346,8 @@ var vm = new Vue({
         big: false,
         imatge:"./fotos/raciones/AlitasPollo.jpg", 
         nom: ["Aletes de pollastre", "Alitas de pollo", "Chicken wings", "Ailes de poulet"], 
-        desripcio: ["5 unitats","5 unidades","5 units","5 unités"],  
-        preu: ["6.75", "0"]
+        desripcio: ["","","",""],  
+        preu: ["7.50", "0"]
     });
     this.racionesNormales.push({
         big: false,

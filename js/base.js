@@ -819,7 +819,7 @@ var vm = new Vue({
         imatge:"./fotos/aperitivos/berberechos.jpg", 
         nom: ["Escopinyes de llauna", "Berberechos de lata", "Canned cockles", "Coques en conserve"], 
         desripcio: ["","","",""], 
-        preu: ["7.25", "0"]}
+        preu: ["8.00", "0"]}
     );
     this.listaAperitivos.push({
         big: false,
@@ -833,35 +833,35 @@ var vm = new Vue({
         imatge:"./fotos/aperitivos/mejillones.jpg", 
         nom: ["Musclos de llauna", "Mejollones de lata", "Canned mussels", "Moules en conserve"], 
         desripcio: ["","","",""], 
-        preu: ["5.25", "0"]}
+        preu: ["5.50", "0"]}
     );
     this.listaAperitivos.push({
         big: false,
         imatge:"./fotos/aperitivos/sardinas.jpg", 
         nom: ["Sardines de llauna", "Sardinas de lata", "Canned sardines", "Sardines en conserve"], 
         desripcio: ["","","",""], 
-        preu: ["5,25", "0"]}
+        preu: ["5,50", "0"]}
     );
     this.listaAperitivos.push({
         big: false,
         imatge:"./fotos/aperitivos/pulpo.jpg", 
         nom: ["Pop en oli d'oliva", "Pulpo en aceite de oliva", "Octopus in olive oil", "Poulpe dans l'huille d'olive"], 
         desripcio: ["","","",""], 
-        preu: ["6.85", "0"]}
+        preu: ["7.00", "0"]}
     );
     this.listaAperitivos.push({
         big: false,
         imatge:"./fotos/aperitivos/olivas.jpg", 
         nom: ["Olives farcides", "Olivas rellenas", "Stuffed olives", "Olives farcies"], 
         desripcio: ["","","",""], 
-        preu: ["2.75", "2.00"]}
+        preu: ["3.00", "2.25"]}
     );
     this.listaAperitivos.push({
         big: false,
         imatge:"./fotos/aperitivos/chips.jpg", 
         nom: ["Patatas xips", "Patatas chips", "Chips", "Chips"], 
         desripcio: ["","","",""], 
-        preu: ["1.65", "0"]}
+        preu: ["1.85", "0"]}
     );
     
     this.listaPostres=[];
@@ -870,70 +870,70 @@ var vm = new Vue({
         imatge:"./fotos/postres/crema.jpg", 
         nom: ["Crema catalana", "Crema catalana", "Catalan custard", "Crème catalane"], 
         desripcio: ["","","",""], 
-        preu: ["4.50", "0"]}
+        preu: ["4.75", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/flan.jpg", 
         nom: ["Flam", "Flan", "Crème caramel", "Crème caramel"], 
         desripcio: ["","","",""], 
-        preu: ["2.00", "0"]}
+        preu: ["2.25", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/recuit.jpg", 
         nom: ["Recuit de Fonteta amb mel", "Requesón de Fonteta con miel", "Cattage cheese from Fonteta with honey", "Formage blanc de Fonteta avec miel"], 
         desripcio: ["","","",""], 
-        preu: ["4.50", "0"]}
+        preu: ["4.75", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/bombones.jpg", 
         nom: ["Bombons gelats", "Bombones helados", "Iced choccolates", "Crème glacée au chocolat"], 
         desripcio: ["","","",""], 
-        preu: ["4.25", "0"]}
+        preu: ["4.50", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/copas.jpg", 
         nom: ["Copa de gelat", "Copa de helado", "Ice cream cup", "Coupe de glace"], 
         desripcio: ["Llimona, vainilla, xocolata o café","Limón, vainilla, chocolate o café","Lemon, vanilla, chocolate or coffee","Citron, vanille, chocolat ou café"], 
-        preu: ["3.00", "0"]}
+        preu: ["3.25", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/tarta.jpg", 
         nom: ["Pastís al whisky", "Tarta al whisky", "Whiskey cake", "Gâteau au whisky"], 
         desripcio: ["","","",""], 
-        preu: ["6.75", "0"]}
+        preu: ["7.00", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/melon.jpg", 
         nom: ["Meló", "Melón", "Melon", "Melon"], 
         desripcio: ["","","",""], 
-        preu: ["3.75", "0"]}
+        preu: ["3.85", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/sandia.jpg", 
         nom: ["Síndria", "Sandía", "Watermelon", "Melon d'eau"], 
         desripcio: ["","","",""], 
-        preu: ["3.75", "0"]}
+        preu: ["3.85", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/temporada.jpg", 
         nom: ["Fruita de temporada", "Fruta de temporada", "Seasonal fruit", "Fruit de saison"], 
         desripcio: ["","","",""], 
-        preu: ["3.75", "0"]}
+        preu: ["3.85", "0"]}
     );
     this.listaPostres.push({
         big: false,
         imatge:"./fotos/postres/frutosSecos.jpg", 
         nom: ["Fruits secs", "Frutos secos", "Dried fruits and nuts", "Fruits secs"], 
         desripcio: ["","","",""], 
-        preu: ["3.25", "0"]}
+        preu: ["3.50", "0"]}
     );
     
     this.cavas=[];

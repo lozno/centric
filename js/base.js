@@ -48,7 +48,7 @@ var vm = new Vue({
       cavas: [],
       listaAperitivos: [],
       listaPostres: [],
-      explicacionBocatas: ["* Ingredients extra en entrepà normal <b>+0.50</b> <br> (Formatge, ceba, beicon)  ","* Ingredientes extra en bocadillo normal <b>+0.50</b> <br> (Queso, cebolla, beicon)","* Unless otherwise stated<br>Extra ingredients (Cheese, onion, bacon) <b>+0.50</b>","*Sauf indication contraire<br>Suppléments (fromage, oignon, bacon) <b>+0,50</b> "],
+      explicacionBocatas: ["* Ingredients extra en entrepà normal <b>+0.75</b> <br> (Formatge, ceba, beicon)  ","* Ingredientes extra en bocadillo normal <b>+0.75</b> <br> (Queso, cebolla, beicon)","* Unless otherwise stated<br>Extra ingredients (Cheese, onion, bacon) <b>+0.75</b>","*Sauf indication contraire<br>Suppléments (fromage, oignon, bacon) <b>+0,75</b> "],
       alergias: ["Comuniqui al personal si té alguna intolerància o al·lèrgia alimentària", "Comunique al personal si tiene alguna intolerancia o alergia alimentaria","If you have any food intolerance or allergy let us know", "Si vous avez une intolérance ou allergie alimentaire laissez nous savoir"],
       terraza: ["Suplement en terrassa, events i festius especials <b>+0.20</b>", "Suplemento en terraza, eventos y festivos especiales <b>+0.20</b>", "Terrace, events and special holidays have a supplement <b>+0.20</b>", "Terrasse, événements et especial jours fériés ont un supplément <b>+0.20</b>"]
   },
@@ -209,14 +209,14 @@ var vm = new Vue({
         big: false,
         imatge:"./fotos/bocadillos/BocHamburguesa.jpg", 
         nom: ["Hamburguesa", "Hamburguesa", "Burger", "Hamburguer"], 
-        desripcio: ["Amb ceba<br>En baguette +0.50€","Con cebolla<br>En baguette +0.50€","With onion<br>On baguette +0.50€","Avec oignon<br>Sur baguette +0,50€"], 
+        desripcio: ["Amb ceba<br>En baguette +0.75€","Con cebolla<br>En baguette +0.75€","With onion<br>On baguette +0.75€","Avec oignon<br>Sur baguette +0,75€"], 
         preu: ["5.25", "0"]
     });
     this.bocadillosCalientes.push({
         big: false,
         imatge:"./fotos/bocadillos/BocHamburguesaEspecial.jpg", 
         nom: ["Hamburguesa especial Cèntric", "Hamburguesa especial Cèntric", "Special burger \"Cèntric\"", "Burger spécial \"Cèntric\""], 
-        desripcio: ["Amb ceba, formatge, enciam, tomata i beicon<br>En baguette +0.50€","Con cebolla, queso, lechuga, tomate y beicon<br>En baguette +0.50€","With onion, cheese, lettuce, tomato and bacon<br>On baguette +0.50€","Avec oignon, fromage, laitue, tomate et bacon<br>Sur baguette +0,50€"], 
+        desripcio: ["Amb ceba, formatge, enciam, tomata i beicon<br>En baguette +0.75€","Con cebolla, queso, lechuga, tomate y beicon<br>En baguette +0.75€","With onion, cheese, lettuce, tomato and bacon<br>On baguette +0.75€","Avec oignon, fromage, laitue, tomate et bacon<br>Sur baguette +0,75€"], 
         preu: ["6.75", "0"]
     });
     this.bocadillosCalientes.push({
@@ -742,7 +742,7 @@ var vm = new Vue({
         marca: "Enate - Cabernet - Merlot",
         denominacio: "D.O. Somontano",
         calidad: ["6 messos en barrica", "6 meses en barrica", "6 months in barrel", "6 mois en chêne"],
-        preu: ["14,85", "0"]}
+        preu: ["15,85", "0"]}
     );
     this.vinosTintos.push({
         big: false,

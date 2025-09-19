@@ -702,7 +702,7 @@ var vm = new Vue({
         marca: "Campillo",
         denominacio: "D.O. Rioja",
         calidad: ["Criança", "Crianza", "Aging ", "Vieillissement"],
-        preu: ["16.50", "0"]}
+        preu: ["17.85", "0"]}
     );
     this.vinosTintos.push({
         big: false,
@@ -951,7 +951,7 @@ var vm = new Vue({
         marca: "Juvé & Camps",
         denominacio: "Brut Nature - GRAN RESERVA",
         calidad: ["75cl", "75cl", "75cl", "75cl"],
-        preu: ["24.50", "0"]}
+        preu: ["26.85", "0"]}
     );
     this.cavas.push({
         big: false,
@@ -967,7 +967,7 @@ var vm = new Vue({
         marca: "Juvé & Camps - Cinta Púrpura",
         denominacio: "Brut - RESERVA",
         calidad: ["375ml", "375ml", "375ml", "375ml"],
-        preu: ["13.85", "0"]}
+        preu: ["14.85", "0"]}
     );
 
   }
